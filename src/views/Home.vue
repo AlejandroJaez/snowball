@@ -1,8 +1,11 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+<div class="container">
+  <div class="columns is-centered">
+    <div class="column is-half m-3">
+    <HelloWorld />
+    </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -14,5 +17,6 @@ export default {
   components: {
     HelloWorld,
   },
+  
 };
 </script>
