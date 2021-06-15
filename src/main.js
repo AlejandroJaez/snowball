@@ -4,15 +4,11 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import "buefy/dist/buefy.css";
+import "./vee-validate";
+
 
 Vue.use(Buefy);
 Vue.config.productionTip = false;
-Vue.prototype.$multiwatch = function (props, watcher) {
-  var iterator = function (prop) {
-    this.$watch(prop, watcher);
-  };
-  props.forEach(iterator, this);
-};
 
 new Vue({
   router,
